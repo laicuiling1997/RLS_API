@@ -18,6 +18,10 @@ class Test01():
     def test_04(self):
         print('---用例04---，属于test模块下')
 
+    @pytest.mark.test1
+    def test_05(self):
+        print('---用例05---，属于test模块下')
+
 if __name__ == '__main__':
     pytest.main(['-m','departadd'])
 
