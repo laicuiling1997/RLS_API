@@ -11,6 +11,7 @@ import xlrd
 from xlutils.copy import copy
 import json
 
+
 def getExcel(sheetname,casename):
     resList = []
     #获取用例地址
@@ -35,6 +36,7 @@ def getExcel(sheetname,casename):
             resList.append((json.loads(reqBodyData),json.loads(respData)))
         idx += 1
     return resList
+
 
 
 def set_execelData():
