@@ -54,7 +54,9 @@ def set_execelData():
 
 if __name__ == '__main__':
     # print(getExcel('login','Login'))
-    for one in getExcel('depart','Depart'):
+
+    for one in getExcel('login', 'Login'):
+    # for one in getExcel('depart','Depart'):
         print(one)
     # set_execelData()
 

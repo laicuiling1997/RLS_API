@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-import pytest
-
-
-@pytest.fixture()
-def test1():
-    a = 'leo'
-    print('\n传出a')
-    return a
+# import pytest
+#
+#
+# @pytest.fixture()
+# def test1():
+#     a = 'leo'
+#     print('\n传出a')
+#     return a
 
 
 # @pytest.fixture(scope='function')
@@ -16,11 +16,11 @@ def test1():
 #     return b
 
 
-def test3(test1):
-    name = 'leo'
-    print('找到name')
-    print(test1)
-    assert test1 == name
+# def test3(test1):
+#     name = 'leo'
+#     print('找到name')
+#     print(test1)
+#     assert test1 == name
 
 
 # def test4(test2):
@@ -29,6 +29,6 @@ def test3(test1):
 #     assert test2 == sex
 
 
-if __name__ == '__main__':
-    # pytest.main('-q test_fixture.py')
-    test3()
+# if __name__ == '__main__':
+#     # pytest.main('-q test_fixture.py')
+#     pass

@@ -1,0 +1,58 @@
+#login testcase
+
+- #testlogin01
+  url: communal/user/rlsAcLogin  #路径
+  method: POST  #方法
+  detail: 用户名正确，密码正确  #详情
+  header:  #请求头
+  data:
+    membMobile: 13227676939
+    membPassword: 123456qw
+    mercUsed: 14
+  resp:
+    code: "0000"
+    msg: success
+
+- #testlogin02
+  url: communal/user/rlsAcLogin  #路径
+  method: POST  #方法
+  detail: 用户名正确，密码错误  #详情
+  header:  #请求头
+  data:
+    membMobile: 13227676939
+    membPassword: 123qw
+    mercUsed: 14
+  resp:
+    code: "810"
+    msg: 账号或密码错误!
+
+- #testlogin03
+  url: communal/user/rlsAcLogin  #路径
+  method: POST  #方法
+  detail: 用户名错误，密码正确  #详情
+  header:  #请求头
+  data:
+    membMobile: 132276939
+    membPassword: 12356qw
+    mercUsed: 14
+  resp:
+    code: "8101"
+    msg: 账号不存在!
+
+- #testlogin04
+  url: communal/user/rlsAcLogin  #路径
+  method: POST  #方法
+  detail: 用户名错误，密码错误  #详情
+  header:  #请求头
+  data:
+    membMobile: 13227699
+    membPassword: 1235w
+    mercUsed: 14
+  resp:
+    code: "8101"
+    msg: 账号不存在!
+
+
+
+
+
